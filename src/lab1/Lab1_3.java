@@ -19,7 +19,7 @@ public class Lab1_3 {
             S *= (1.0 * k - N) / (1.0 * k + N) + 1;
             k++;
         }
-        System.out.println(" S1 = " + S);
+        System.out.println(" S1 = " + String.format("%.2f", S));
 
         S = 1;
         k = N;
@@ -28,21 +28,21 @@ public class Lab1_3 {
             S *= (1.0 * k - N) / (1.0 * k + N) + 1;
             k++;
         } while (k <= 19);
-        System.out.println(" S2 = " + S);
+        System.out.println(" S2 = " + String.format("%.2f", S));
 
         S = 1;
         for (k = N; k <= 19; k++)
         {
             S *= (1.0 * k - N) / (1.0 * k + N) + 1;
         }
-        System.out.println(" S3 = " + S);
+        System.out.println(" S3 = " + String.format("%.2f", S));
 
         S = 1;
         for (k = 19; k >= N; k--)
         {
             S *= (1.0 * k - N) / (1.0 * k + N) + 1;
         }
-        System.out.println(" S4 = " + S);
+        System.out.println(" S4 = " + String.format("%.2f", S));
 
 
     }

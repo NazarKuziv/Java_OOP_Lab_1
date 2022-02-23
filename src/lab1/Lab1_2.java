@@ -19,7 +19,7 @@ public class Lab1_2 {
         System.out.print(" c = ");
         c = input.nextDouble();
 
-        // спосіб 1: розгалуження в скороченій формі
+
         if (c < 0 && b != 0)
             F = a * Math.pow(x, 2) + Math.pow(b, 2) * x;
         if (c > 0 && b == 0)
@@ -27,19 +27,7 @@ public class Lab1_2 {
         if (!(c < 0 && b != 0) && !(c > 0 && b == 0))
             F = x / c;
 
-        System.out.print(" F1 = "+F);
-
-        // спосіб 2: розгалуження в повній формі
-        if (c < 0 && b != 0)
-            F = a * Math.pow(x, 2) + Math.pow(b, 2) * x;
-        else
-        if (c > 0 && b == 0)
-            F = (x + a) / (x + c);
-        else
-            F = x / c;
-
-        System.out.print(" F2 = "+F);
-
+        System.out.print(" F1 = "+ F);
 
     }
 }
